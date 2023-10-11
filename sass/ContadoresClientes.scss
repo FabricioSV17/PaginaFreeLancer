@@ -1,0 +1,46 @@
+.ContadoresClientes{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    &__informacion{
+        margin-top: 1rem;
+        padding: 1rem ;
+        &--titulo{
+            font-size: 2.5rem;
+            text-align: center;
+            font-family: $Poppins;
+        }
+        &--parrafo{
+            text-align: center;
+            font-family: $Poppins;
+            line-height: 1.7;
+        }
+    }
+    &__contadores{
+        width: 100%;
+        margin-top: 2rem;
+        padding: 0 1rem;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1.8rem;
+        &--contenedor{
+            text-align: center;
+            font-size: 2rem;
+            font-family: $Poppins;
+            &--numero{
+                font-size: 3rem;
+            }
+            &--parrafo{
+                font-size: 1.8rem;
+            }
+        }
+    }
+}
+@media screen and (min-width:850px){
+    .ContadoresClientes{
+        margin-top: 8rem;
+        flex-direction: row;
+        margin-bottom: 4rem;
+        align-items: center;
+    }
+}

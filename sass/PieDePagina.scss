@@ -1,0 +1,45 @@
+.PieDePagina{
+    width: 100%;
+    background: $Negro;
+    &__contenedor{
+        padding: 2rem 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        &__Logo{
+            z-index: 1111;
+            display: flex;
+            // flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            img{
+                width: 5rem;
+            }
+            &--titulo{
+                color: $Blanco;
+                font-family: $Poppins;
+
+            }
+        }
+        &__creditos{
+            &--CopyRight{
+                font-size: 1.3rem;
+                font-family: $Poppins;
+                text-align: center;
+                color: $Blanco;
+                margin-top: 2rem;
+            }
+            &--iconos{
+                text-align: center;
+                gap: 1rem;
+                margin-top: 2rem;
+                i{
+                    font-size: 2.5rem;
+                    color: $Blanco;
+                    margin: 0 1rem;
+                }
+            }
+        }
+    }
+}

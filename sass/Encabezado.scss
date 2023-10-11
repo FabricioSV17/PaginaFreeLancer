@@ -1,0 +1,72 @@
+.Encabezado{
+    width: 100%;
+    background: $Negro;
+    position: fixed;
+    z-index: 11111;
+    &__contenedor{
+        padding: 2rem 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &__Logo{
+            z-index: 1111;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            img{
+                width: 5rem;
+            }
+            &--titulo{
+                color: $Blanco;
+                font-family: $Poppins;
+
+            }
+        }
+        &__Menu{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: $Negro;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 3rem;
+            font-size: 3rem;
+            font-family: $Poppins;
+            &--enlace{
+                color: $Blanco;
+            }
+        }
+        &__Menu.active{
+            display: flex;
+        }
+        &__BarMenu{
+            z-index: 11111;
+            color: $Blanco;
+            font-size: 2rem;
+        }
+    }
+}
+@media screen and (min-width:750px) {
+    .Encabezado{
+        &__contenedor{
+            &__Menu{
+                width: auto;
+                display: block;
+                position: relative;
+                height: 100%;
+                text-align: right;
+                &--enlace{
+                    font-size: 1.7rem;
+                    margin: 0 1rem;
+                }
+            }
+            &__BarMenu{
+                display: none;
+            }
+        }
+    }
+}
