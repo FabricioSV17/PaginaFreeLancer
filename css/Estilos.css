@@ -344,5 +344,189 @@ img {
     font-size: 3rem;
   }
 }
+.Body {
+  width: 100%;
+  height: 100vh;
+  background: url(../../img/FondoFormulario.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.ContenedorFormulario {
+  max-width: 90rem;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  background: rgba(250, 250, 250, 0.5);
+  backdrop-filter: blur(2px);
+}
+.ContenedorFormulario .Error {
+  padding: 1rem;
+  width: 100%;
+  background: rgb(185, 0, 0);
+  color: #F5F7FF;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+}
+.ContenedorFormulario .Correcto {
+  padding: 1rem;
+  width: 100%;
+  background: rgb(0, 185, 9);
+  color: #F5F7FF;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+}
+.ContenedorFormulario__informacion {
+  position: relative;
+  width: 100%;
+  color: #F5F7FF;
+  font-family: "Roboto", sans-serif;
+}
+.ContenedorFormulario__informacion--info {
+  width: 100%;
+  height: 100%;
+  background: #1841f7;
+  padding: 1rem 2rem;
+}
+.ContenedorFormulario__informacion--info--titulo {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+.ContenedorFormulario__informacion--info--contenedor {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+}
+.ContenedorFormulario__informacion--info--contenedor--parrafo {
+  margin-left: 1.5rem;
+  font-size: 1.6rem;
+}
+.ContenedorFormulario__informacion--info--contenedor i {
+  font-size: 2.5rem;
+}
+.ContenedorFormulario__Formulario {
+  font-family: "Roboto", sans-serif;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+.ContenedorFormulario__Formulario--titulo {
+  font-size: 3.5rem;
+}
+.ContenedorFormulario__Formulario--parrafo {
+  font-size: 1.8rem;
+  margin: 1rem 0;
+}
+.ContenedorFormulario__Formulario--inputSubmit {
+  max-width: 25rem;
+  width: 100%;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 2.3rem;
+  border-radius: 1rem;
+  border: none;
+  outline: none;
+  background: #3C60FC;
+  color: #F5F7FF;
+  margin: 2rem auto 0 auto;
+}
+.ContenedorFormulario__Formulario--inputSubmit:hover {
+  background: #1841f7;
+}
+.ContenedorFormulario__Formulario__contenedor {
+  width: 100%;
+  display: grid;
+}
+.ContenedorFormulario__Formulario__contenedor--input {
+  padding: 1rem;
+  font-size: 1.6rem;
+  margin: 0.5rem 0;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  color: #8e8d8d;
+  background: #efeded;
+}
+.ContenedorFormulario__Formulario__contenedor--input::placeholder {
+  color: #aeacac;
+}
+.ContenedorFormulario__Formulario__contenedor .TextArea {
+  width: 100%;
+  height: 25rem;
+  resize: none;
+  font-size: 1.6rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  padding: 1rem;
+  color: #8e8d8d;
+  background: #efeded;
+  margin-top: 1rem;
+}
+.ContenedorFormulario__Formulario__contenedor .TextArea::placeholder {
+  color: #aeacac;
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 748px) {
+  .ContenedorFormulario .Error {
+    grid-column: 1/3;
+    margin-top: 0;
+  }
+  .ContenedorFormulario .Correcto {
+    grid-column: 1/3;
+    margin-top: 0;
+  }
+  .ContenedorFormulario__Formulario__contenedor {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  .ContenedorFormulario__Formulario__contenedor--input {
+    margin: 0;
+  }
+  .ContenedorFormulario__Formulario__contenedor .TextArea {
+    height: 20rem;
+    grid-column: 1/3;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .ContenedorFormulario {
+    border-radius: 1rem;
+    display: flex;
+    padding: 4rem 2rem;
+    box-shadow: 6px 6px 20px #131315;
+    margin: 15rem auto;
+  }
+  .ContenedorFormulario__informacion {
+    width: 30%;
+  }
+  .ContenedorFormulario__informacion--info {
+    position: absolute;
+    width: 32rem;
+    height: 52rem;
+    top: 0.5rem;
+    margin-left: -10rem;
+    padding: 10rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .ContenedorFormulario__informacion--info--titulo {
+    width: 100%;
+    font-size: 4.5rem;
+  }
+  .ContenedorFormulario__informacion--info--contenedor {
+    margin: 1rem 0;
+  }
+  .ContenedorFormulario__Formulario {
+    width: 70%;
+  }
+}
 
 /*# sourceMappingURL=Estilos.css.map */
