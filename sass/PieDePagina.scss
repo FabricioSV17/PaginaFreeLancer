@@ -43,3 +43,20 @@
         }
     }
 }
+@media screen and (min-width: 1000px) {
+    .PieDePagina{
+        &__contenedor{
+            flex-direction: row;
+            &__creditos{
+                &--CopyRight{
+                    font-size: 1.8rem;
+                }
+                &--iconos{
+                    i{
+                        font-size: 3rem;
+                    }
+                }
+            }
+        }
+    }
+}

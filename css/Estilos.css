@@ -93,8 +93,22 @@ img {
     text-align: right;
   }
   .Encabezado__contenedor__Menu--enlace {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     margin: 0 1rem;
+    padding-bottom: 0.5rem;
+    position: relative;
+  }
+  .Encabezado__contenedor__Menu--enlace::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 0.2rem;
+    background: #F5F7FF;
+    bottom: 0;
+    transition: all 0.5s ease-in-out;
+  }
+  .Encabezado__contenedor__Menu--enlace:hover::before {
+    width: 100%;
   }
   .Encabezado__contenedor__BarMenu {
     display: none;
@@ -317,6 +331,18 @@ img {
   font-size: 2.5rem;
   color: #F5F7FF;
   margin: 0 1rem;
+}
+
+@media screen and (min-width: 1000px) {
+  .PieDePagina__contenedor {
+    flex-direction: row;
+  }
+  .PieDePagina__contenedor__creditos--CopyRight {
+    font-size: 1.8rem;
+  }
+  .PieDePagina__contenedor__creditos--iconos i {
+    font-size: 3rem;
+  }
 }
 
 /*# sourceMappingURL=Estilos.css.map */

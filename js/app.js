@@ -13,7 +13,7 @@ window.addEventListener('scroll',()=>{
         ImagenHero.style.transform=`translateY(-${ventana/4}%)`
     }else if(window.screen.width > 400 && window.screen.width < 800){
         informacionHero.style.transform = `translateY(${ventana/7}%)`;
-    }else if(window.screen.width > 800){
+    }else if(window.screen.width >= 800){
         ImagenHero.style.transform=`translateY(-${ventana/30}%)`
         informacionHero.style.transform = `translateY(${ventana/7}%)`;
     
