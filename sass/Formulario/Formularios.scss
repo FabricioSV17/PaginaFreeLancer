@@ -6,6 +6,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     overflow: scroll;
+    
 }
 .ContenedorFormulario{
     max-width: 90rem;
@@ -14,6 +15,8 @@
     position: relative;
     background:rgba(250,250,250,.5);
     backdrop-filter: blur(2px);
+    overflow: scroll;
+
     .Error{
         padding: 1rem;
         width: 100%;
@@ -160,6 +163,7 @@
         padding: 4rem 2rem;
         box-shadow: 6px 6px 20px $Negro;
         margin: 15rem auto;
+        overflow: visible;
         &__informacion{
             width: 30%;
             
