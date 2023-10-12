@@ -1,0 +1,38 @@
+.Potenciar{
+    padding: 3rem 2rem;
+    width: 100%;
+    &--titulo{
+        width: 100%;
+        font-size: 3.5rem;
+        font-family: $Poppins;
+        text-align: center;
+        &:nth-child(2){
+            margin-bottom: 2rem;
+        }
+    }
+    &__contenedor{
+        &__descripcion{
+            &--parrafo{
+                font-size: 1.6rem;
+                font-family: $Poppins;
+                text-align: center;
+            }
+        }
+        &__imagen{
+            margin-top: 5rem;
+            width: 100%;
+            img{
+                position: relative;
+                z-index: -11;
+                animation: Movimiento 3s infinite ;
+            }
+
+        }
+    }
+}
+@keyframes Movimiento {
+    0%{transform: translateY(0);}
+    50%{transform: translateY(15px);}
+    100%{transform: translateY(0);}; 
+
+}

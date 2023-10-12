@@ -1,0 +1,74 @@
+.AcercaDe{
+    width: 100%;
+    position: fixed;
+    transition: all 0.5s ease-in-out;
+    &.scroll{
+        background: $Negro;
+    }
+    &__contenedor{
+        padding: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &__logo{
+            z-index: 1111;
+            display: flex;
+            align-items: center;
+            color: $Blanco;
+            &--imagen{
+                width: 4rem;
+            }
+            &--titulo{
+                font-family: $Poppins;
+                margin-left: .5rem;
+            }
+        }
+        &__Menu{
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: $Negro;
+            z-index: 111;
+            &--enlace{
+                font-size: 3rem;
+                font-family: $Poppins;    
+                margin: 2rem 0;
+                color: $Blanco;
+            }
+            &.active{
+                display: flex;
+            }
+        }
+        
+        &__BarMenu{
+            z-index: 1111;
+            color: $Negro;
+            font-size: 3rem;
+            margin-right: 1rem;
+            cursor: pointer;
+            color: $Blanco;
+        }
+    }
+}
+.AcercaDeHero{
+    width: 100%;
+    height: 50vh;
+    background: #14668d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: $Poppins;
+    color: $Blanco;
+    gap: 1rem;
+    font-size: 2.5rem;
+    &--titulo{
+        font-weight: 300;
+    }
+}

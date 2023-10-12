@@ -476,7 +476,11 @@ img {
 }
 
 @media screen and (min-width: 748px) {
+  .Body {
+    padding: 0 2rem;
+  }
   .ContenedorFormulario {
+    margin: 5rem auto;
     height: auto;
   }
   .ContenedorFormulario .Error {
@@ -500,6 +504,9 @@ img {
   }
 }
 @media screen and (min-width: 1000px) {
+  .Body {
+    overflow: hidden;
+  }
   .ContenedorFormulario {
     border-radius: 1rem;
     display: flex;
@@ -531,6 +538,135 @@ img {
   }
   .ContenedorFormulario__Formulario {
     width: 70%;
+  }
+}
+.AcercaDe {
+  width: 100%;
+  position: fixed;
+  transition: all 0.5s ease-in-out;
+}
+.AcercaDe.scroll {
+  background: #131315;
+}
+.AcercaDe__contenedor {
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.AcercaDe__contenedor__logo {
+  z-index: 1111;
+  display: flex;
+  align-items: center;
+  color: #F5F7FF;
+}
+.AcercaDe__contenedor__logo--imagen {
+  width: 4rem;
+}
+.AcercaDe__contenedor__logo--titulo {
+  font-family: "Poppins", sans-serif;
+  margin-left: 0.5rem;
+}
+.AcercaDe__contenedor__Menu {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #131315;
+  z-index: 111;
+}
+.AcercaDe__contenedor__Menu--enlace {
+  font-size: 3rem;
+  font-family: "Poppins", sans-serif;
+  margin: 2rem 0;
+  color: #F5F7FF;
+}
+.AcercaDe__contenedor__Menu.active {
+  display: flex;
+}
+.AcercaDe__contenedor__BarMenu {
+  z-index: 1111;
+  color: #131315;
+  font-size: 3rem;
+  margin-right: 1rem;
+  cursor: pointer;
+  color: #F5F7FF;
+}
+
+.AcercaDeHero {
+  width: 100%;
+  height: 50vh;
+  background: #14668d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  color: #F5F7FF;
+  gap: 1rem;
+  font-size: 2.5rem;
+}
+.AcercaDeHero--titulo {
+  font-weight: 300;
+}
+
+.AcercaDeInfo {
+  width: 100%;
+  padding: 0 1rem;
+  margin-top: -6rem;
+}
+.AcercaDeInfo__informacion {
+  padding: 1rem;
+}
+.AcercaDeInfo__informacion--parrafo {
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.7;
+  margin-top: 1rem;
+}
+
+.Potenciar {
+  padding: 3rem 2rem;
+  width: 100%;
+}
+.Potenciar--titulo {
+  width: 100%;
+  font-size: 3.5rem;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+.Potenciar--titulo:nth-child(2) {
+  margin-bottom: 2rem;
+}
+.Potenciar__contenedor__descripcion--parrafo {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+.Potenciar__contenedor__imagen {
+  margin-top: 5rem;
+  width: 100%;
+}
+.Potenciar__contenedor__imagen img {
+  position: relative;
+  z-index: -11;
+  animation: Movimiento 3s infinite;
+}
+
+@keyframes Movimiento {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 
