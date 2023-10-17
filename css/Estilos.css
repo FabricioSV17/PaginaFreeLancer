@@ -630,6 +630,27 @@ img {
   margin-top: 1rem;
 }
 
+@media screen and (min-width: 768px) {
+  .AcercaDeInfo {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    align-items: center;
+  }
+  .AcercaDeInfo__contenedorImage {
+    width: 50%;
+    order: 2;
+    position: relative;
+  }
+  .AcercaDeInfo__contenedorImage img {
+    position: absolute;
+    transform: translateY(35rem);
+  }
+  .AcercaDeInfo__informacion {
+    order: 1;
+    width: 50%;
+  }
+}
 .Potenciar {
   padding: 3rem 2rem;
   width: 100%;

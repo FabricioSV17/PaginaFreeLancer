@@ -13,3 +13,24 @@
         }
     }
 }
+@media screen and (min-width:768px) {
+    .AcercaDeInfo{
+        display: flex;
+        flex-direction: row;
+        margin-top: 2rem;
+        align-items: center;
+        &__contenedorImage{
+            width: 50%;
+            order: 2;
+            position: relative;
+            img{
+                position: absolute;
+                transform: translateY(35rem);
+            }
+        }
+        &__informacion{
+            order: 1;
+            width: 50%;
+        }
+    }
+}
