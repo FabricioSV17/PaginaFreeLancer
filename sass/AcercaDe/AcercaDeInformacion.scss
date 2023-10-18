@@ -17,16 +17,13 @@
     .AcercaDeInfo{
         display: flex;
         flex-direction: row;
-        margin-top: 2rem;
+        margin-top: 4rem;
+        padding: 3rem;
         align-items: center;
         &__contenedorImage{
             width: 50%;
             order: 2;
             position: relative;
-            img{
-                position: absolute;
-                transform: translateY(35rem);
-            }
         }
         &__informacion{
             order: 1;

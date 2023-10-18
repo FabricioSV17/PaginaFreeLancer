@@ -2,6 +2,7 @@
     width: 100%;
     position: fixed;
     transition: all 0.5s ease-in-out;
+    z-index: 11111;
     &.scroll{
         background: $Negro;
     }
@@ -70,5 +71,28 @@
     font-size: 2.5rem;
     &--titulo{
         font-weight: 300;
+    }
+}
+@media screen and (min-width:768px) {
+    .AcercaDeHero{
+        &--titulo{
+            font-size: 5rem;
+        }
+    }
+}
+@media screen and (min-width:1100px){
+    .AcercaDe{
+        &__contenedor{
+            &__Menu{
+                left: 70%;
+                right: 0;
+                width: 30%;
+            }
+        }
+    }
+    .AcercaDeHero{
+        &--titulo{
+            font-size: 6rem;
+        }
     }
 }

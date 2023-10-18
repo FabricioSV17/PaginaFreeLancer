@@ -12,9 +12,3 @@ window.addEventListener('scroll',()=>{
         EncabezadoAcercaDe.classList.remove('scroll');
     }
 })
-// Efecto parallax
-const ImagenAcercaDe = document.querySelector('.EfectoScroll');
-window.addEventListener('scroll',()=>{
-    let ventana = window.scrollY;
-    ImagenAcercaDe.style.transform = `translateY(-${ventana / 5}%)`;
-})
