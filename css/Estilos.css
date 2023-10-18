@@ -669,11 +669,10 @@ img {
   width: 100%;
 }
 .Potenciar--titulo {
-  width: 50%;
+  width: 100%;
   font-size: 3.5rem;
   font-family: "Poppins", sans-serif;
   text-align: center;
-  margin: 0 auto;
   margin-bottom: 3rem;
 }
 .Potenciar--titulo:nth-child(2) {
